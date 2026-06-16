@@ -13,6 +13,6 @@ sources:
     schema: STAGE_SCHEMA
     tables:
       - name: STG_CUSTOMERS
-        description: Customized purchase order data with line-level details
-      - name: STG_ORDERS 
+        description: Customized purchase order data with line-level details 
+      - name: STG_ORDERS   
         
