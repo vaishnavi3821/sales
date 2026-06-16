@@ -38,11 +38,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   sales:
     # Applies to all files under models/example/
-    stage:
+    2.Stage:
      +materialized: table
 
-      Inter:
+    3.Inter:
      +materialized: table
 
-      Mart:
+    4.Mart:
      +materialized: table

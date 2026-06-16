@@ -5,4 +5,4 @@ select
     state,
     email,
     signup_date
-from {{ source('demo_sources', 'STG_CUSTOMERS') }}
+from {{ source('demo_sources', 'STG_CUSTOMERS') }} 

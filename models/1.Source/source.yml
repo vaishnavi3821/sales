@@ -14,5 +14,5 @@ sources:
     tables:
       - name: STG_CUSTOMERS
         description: Customized purchase order data with line-level details
-      - name: STG_ORDERS
+      - name: STG_ORDERS 
         
