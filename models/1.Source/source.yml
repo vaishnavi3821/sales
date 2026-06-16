@@ -1,0 +1,18 @@
+version: 2
+ 
+sources:
+  - name: demo_sources
+    description: Workday Procurement source tables from data lake
+    database:  |
+      {%- if  target.name == "dev" -%} JOIN_PRACTICE_DB
+      {%- elif target.name == "qa"  -%} JOIN_PRACTICE_DB
+      {%- elif target.name == "uat"  -%} JOIN_PRACTICE_DB
+      {%- elif target.name == "prod"  -%}  JOIN_PRACTICE_DB
+      {%- else -%} invalid_database
+      {%- endif -%}
+    schema: STAGE_SCHEMA
+    tables:
+      - name: STG_CUSTOMERS
+        description: Customized purchase order data with line-level details
+      - name: STG_ORDERS
+        
