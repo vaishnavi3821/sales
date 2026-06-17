@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 select
     order_id,
     customer_id,
@@ -5,4 +7,4 @@ select
     order_date,
     quantity,
     amount
-from {{ source('demo_sources', 'STG_ORDERS') }}
+from {{ source('join_practice', 'STG_ORDERS') }}
