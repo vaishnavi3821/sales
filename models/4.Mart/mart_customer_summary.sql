@@ -10,7 +10,7 @@ select
     sum(amount) as total_amount,
     min(order_date) as first_order_date,
     max(order_date) as latest_order_date
-from {{ ref('int_customer_orders') }}
+from {{ ref('intr_customer_orders') }}
 group by
     customer_id,
     customer_name,

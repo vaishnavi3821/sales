@@ -4,12 +4,7 @@ sources:
   - name: join_practice
     description: Workday Procurement source tables from data lake
     database:  |
-      {%- if  target.name == "dev" -%} JOIN_PRACTICE_DB
-      {%- elif target.name == "qa"  -%} JOIN_PRACTICE_DB
-      {%- elif target.name == "uat"  -%} JOIN_PRACTICE_DB
-      {%- elif target.name == "prod"  -%}  JOIN_PRACTICE_DB
-      {%- else -%} invalid_database
-      {%- endif -%}
+     JOIN_PRACTICE_DB
     schema: STAGE_SCHEMA
     tables:
       - name: STG_CUSTOMERS
