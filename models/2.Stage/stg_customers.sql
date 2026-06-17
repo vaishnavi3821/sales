@@ -3,7 +3,7 @@
 select
     customer_id,
     customer_name,
-    city,
+    city, 
     state,
     email,
     signup_date
