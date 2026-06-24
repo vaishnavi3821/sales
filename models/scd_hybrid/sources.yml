@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: member_source
+    database: MEMBER_DB
+    schema: PUBLIC
+    tables:
+      - name: SOURCE_MEMBER
