@@ -1,12 +1,20 @@
 version: 2
- 
+
 sources:
   - name: join_practice
     description: Workday Procurement source tables from data lake
-    database:  JOIN_PRACTICE_DB
+    database: JOIN_PRACTICE_DB
     schema: STAGE_SCHEMA
     tables:
       - name: STG_CUSTOMERS
-        description: Customized purchase order data with line-level details 
-      - name: STG_ORDERS   
+        description: Customized purchase order data with line-level details
+      - name: STG_ORDERS
+
+  - name: member_db
+    description: Member SCD1 and SCD2 source table
+    database: JOIN_PRACTICE_DB
+    schema: STAGE_SCHEMA
+    tables:
+      - name: MEMBER_SOURCE
+ 
       
